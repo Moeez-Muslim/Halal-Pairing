@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700" prefWidth="1350" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+    <children>
+        <ScrollPane layoutX="322.0" prefHeight="700.0" prefWidth="675.0" style="-fx-background-color: #fffbfb;">
+         <content>
+            <VBox fx:id="postContainer" alignment="TOP_CENTER" prefHeight="118.0" prefWidth="634.0" spacing="20.0" style="-fx-background-color: #ffffff;" stylesheets="@home.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="85.0" prefWidth="585.0" spacing="20.0" styleClass="post-background" stylesheets="@home.css">
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#findPartner" prefHeight="75.0" prefWidth="282.0" styleClass="request_button" stylesheets="@home.css" text="Find ">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="30.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#Request" prefHeight="71.0" prefWidth="278.0" style="-fx-background-color: #ff6480;" styleClass="request_button" stylesheets="@home.css" text="Requests" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="30.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+                  <VBox prefHeight="98.0" prefWidth="605.0" />
+               </children>
+               <padding>
+                  <Insets left="45.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+        </ScrollPane>
+        <Pane layoutY="-1.0" prefHeight="704.0" prefWidth="318.0" style="-fx-background-color: #ff6480;">
+            <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+                <Button alignment="CENTER_LEFT" graphicTextGap="1.0" layoutX="46.0" layoutY="177.0" mnemonicParsing="false" onAction="#home" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Home " textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell Extra Bold" size="22.0" />
+                    </font>
+                </Button>
+            <Text fill="WHITE" layoutX="-20.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Halal Pairing " textAlignment="CENTER" wrappingWidth="313.4931640625">
+               <font>
+                  <Font name="Ravie" size="36.0" />
+               </font>
+            </Text>
+            <Button alignment="CENTER_LEFT" graphicTextGap="1.0" layoutX="46.0" layoutY="237.0" mnemonicParsing="false" onAction="#Messages" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Messages" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="309.0" mnemonicParsing="false" onAction="#findPartner" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Partners" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="380.0" mnemonicParsing="false" onAction="#halalEvent" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Halal Events" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="48.0" layoutY="456.0" mnemonicParsing="false" onAction="#Membership" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Membership" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="520.0" mnemonicParsing="false" onAction="#inviteFriend" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Invite a Friend" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="587.0" mnemonicParsing="false" onAction="#updateProfile" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Update Profile" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+      <Pane layoutX="1001.0" prefHeight="704.0" prefWidth="379.0" style="-fx-background-color: #ff6480;">
+         <children>
+            <Button layoutX="88.0" layoutY="604.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="51.0" prefWidth="168.0" style="-fx-background-color: #ff6480;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="231.0" layoutY="621.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\exit.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" layoutX="107.0" layoutY="545.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateProfile" prefHeight="50.0" style="-fx-background-color: #ff6480;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell Bold" size="30.0" />
+               </font>
+            </Button>
+            <VBox alignment="TOP_CENTER" layoutX="24.0" layoutY="110.0" prefHeight="407.0" prefWidth="332.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="43.0" text="Halal Events Happening!" textFill="#fffbfb">
+                     <font>
+                        <Font name="Rockwell" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="16.0" />
+                     </padding>
+                  </Label>
+                  <VBox prefHeight="104.0" prefWidth="298.0" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Finding Your Ideal Soul Mate">
+                           <font>
+                              <Font name="Rockwell" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Speaker: Abu Usamah">
+                           <font>
+                              <Font name="Rockwell" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="103.0" prefWidth="298.0" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Why 4 marriages should be a norm">
+                           <font>
+                              <Font name="Rockwell" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Speaker: Moeez Muslim">
+                           <font>
+                              <Font name="Rockwell" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="90.0" prefWidth="298.0" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Issues in Marriage and Great advices">
+                           <font>
+                              <Font name="Rockwell" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Speaker: Ismail ibn Musa Menk">
+                           <font>
+                              <Font name="Rockwell" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#halalEvent" prefHeight="57.0" style="-fx-background-color: #ff6480;" text="More Events" textFill="WHITE">
+                     <font>
+                        <Font name="Rockwell Bold" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" layoutX="24.0" layoutY="14.0" prefHeight="76.0" prefWidth="318.0">
+               <children>
+                  <Label text="Name">
+                     <font>
+                        <Font name="Rockwell Bold" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children></Pane>
+    </children>
+</AnchorPane>

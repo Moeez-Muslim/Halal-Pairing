@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="709.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PostController">
+    <children>
+      <VBox alignment="TOP_CENTER" prefHeight="709.0" prefWidth="582.0" style="-fx-background-color: #F2F3F4;" styleClass="post-background" stylesheets="@home.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="775.0" spacing="15.0" style="-fx-background-color: #F2F3F4;">
+               <children>
+                  <ImageView fx:id="imgProfile" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox prefWidth="303.0" style="-fx-background-color: #F2F3F4;">
+                     <children>
+                        <Label fx:id="ProfileName" text="UserName">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="25.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="date" text="Date">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="caption" maxWidth="1.7976931348623157E308" text="Caption">
+               <font>
+                  <Font name="Segoe UI Historic" size="19.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fx:id="image" fitHeight="435.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Pane maxWidth="1.7976931348623157E308" prefHeight="1.0" style="-fx-background-color: black;" />
+            <StackPane alignment="CENTER_LEFT">
+               <children>
+                  <HBox alignment="CENTER_LEFT" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgLike.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgLove.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgHaha.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="noreactions" alignment="TOP_LEFT" text="No. Reactions">
+                                 <font>
+                                    <Font name="Segoe UI Historic" size="19.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="reactioncontainer" alignment="CENTER_LEFT" maxWidth="-Infinity" spacing="4.0" styleClass="reactions-container" stylesheets="@home.css" visible="false">
+                     <children>
+                        <ImageView fx:id="imgLike" fitHeight="40.0" fitWidth="40.0" onMousePressed="#onReactionImagePressed" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgLike.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgLove" fitHeight="40.0" fitWidth="40.0" onMousePressed="#onReactionImagePressed" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgLove.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgHaha" fitHeight="40.0" fitWidth="40.0" onMousePressed="#onReactionImagePressed" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgHaha.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgWow" fitHeight="40.0" fitWidth="40.0" onMousePressed="#onReactionImagePressed" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgWow.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgSad" fitHeight="40.0" fitWidth="40.0" onMousePressed="#onReactionImagePressed" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgSad.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="7.0" right="7.0" />
+                     </padding>
+                     <StackPane.margin>
+                        <Insets left="10.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+            </StackPane>
+            <Pane maxWidth="1.7976931348623157E308" prefHeight="1.0" style="-fx-background-color: black;" />
+            <HBox fx:id="likecontainer" alignment="CENTER_LEFT" onMousePressed="#onLikeContainerPressed" onMouseReleased="#onLikeContainerReleased" spacing="10.0" style="-fx-background-color: #F2F3F4;" styleClass="top-border" stylesheets="@home.css">
+               <children>
+                  <ImageView fx:id="imgReaction" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\imgNoLike.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="reactionName" text="Like">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+    </children>
+</AnchorPane>

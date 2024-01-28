@@ -1,0 +1,50 @@
+.post-background{
+	-fx-background-color: #fff;
+	-fx-background-radius: 15;
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.0,0.0,0.0,5.0);
+}
+
+.reactions-container{
+	-fx-background-color: #fff;
+	-fx-background-radius: 50;
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.0,0.0,0.0,5.0);
+	-fx-border-width: 1;
+	-fx-border-color: #B8B9BB;
+	-fx-border-radius: 50;
+}
+
+.top-border{
+	-fx-border-width: 1 0 0 0;
+	-fx-border-color: black;
+}
+
+.round-border{
+	-fx-background-radius: 100;
+}
+
+.text_field{
+	-fx-background-color: #F0F2F5;
+	-fx-background-radius: 100;
+}
+
+.request_button{
+	-fx-background-color: #fff;
+	-fx-background-radius: 15;
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.0,0.0,0.0,5.0);
+}
+
+.sent_message{
+	-fx-background-color:  #e8c8c8;
+	-fx-background-radius: 2 20 20 20;
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.0,0.0,0.0,5.0);
+}
+.recieve_message{
+	-fx-background-color:   #d38686;
+	-fx-background-radius: 20 20 2 20;
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.0,0.0,0.0,5.0);
+}
+.chatbox_bottom{
+	-fx-background-color:   #fff;
+	-fx-background-radius: 20;
+	-fx-effect: dropShadow(three-pass-box,rgba(0.1,0.1,0.1,0.1),5.0,5.0,5.0,5.0);
+}

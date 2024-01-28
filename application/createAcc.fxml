@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700" prefWidth="1350" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+    <children>
+      <Accordion prefHeight="0.0" prefWidth="0.0" />
+      <Text fill="#ff6480" layoutX="61.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Halal Pairing " textAlignment="CENTER" wrappingWidth="726.4931640625">
+         <font>
+            <Font name="Ravie" size="83.0" />
+         </font>
+      </Text>
+      <Text fill="#ff6480" layoutX="160.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover Destiny the Halal Way" textAlignment="CENTER">
+         <font>
+            <Font name="Rockwell Bold" size="34.0" />
+         </font>
+      </Text>
+      <Pane layoutX="787.0" layoutY="-7.0" prefHeight="719.0" prefWidth="663.0" style="-fx-background-color: FF6480;">
+         <children>
+            <Pane layoutX="91.0" layoutY="107.0" prefHeight="558.0" prefWidth="397.0">
+               <effect>
+                  <Lighting diffuseConstant="1.62" specularConstant="0.12">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="32.59" elevation="144.31" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <children>
+                  <Text fill="#000022" layoutX="110.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+                     <font>
+                        <Font name="Rockwell Extra Bold" size="41.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="password" layoutX="18.0" layoutY="245.0" prefHeight="44.0" prefWidth="362.0" promptText="New Password" style="-fx-background-color: white; -fx-background-radius: 7; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Button alignment="CENTER" layoutX="68.0" layoutY="504.0" mnemonicParsing="false" onAction="#selectProfile" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #000022; -fx-background-radius: 10;" text="Sign Up" textAlignment="CENTER" textFill="#fffbfc">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="Fname" layoutX="17.0" layoutY="71.0" prefHeight="44.0" prefWidth="170.0" promptText="First Name" style="-fx-background-color: white; -fx-background-radius: 7; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Lname" layoutX="205.0" layoutY="71.0" prefHeight="44.0" prefWidth="170.0" promptText="Last Name" style="-fx-background-color: white; -fx-background-radius: 7; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="CNIC" layoutX="18.0" layoutY="128.0" prefHeight="44.0" prefWidth="362.0" promptText="CNIC" style="-fx-background-color: white; -fx-background-radius: 7; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="confirmPassword" layoutX="19.0" layoutY="308.0" prefHeight="44.0" prefWidth="362.0" promptText="Confirm Password" style="-fx-background-color: white; -fx-background-radius: 7; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Text layoutX="21.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us." wrappingWidth="356.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="day" layoutX="21.0" layoutY="365.0" prefHeight="35.0" prefWidth="101.0" promptText="Day" style="-fx-background-color: white;" />
+                  <ComboBox fx:id="month" layoutX="151.0" layoutY="365.0" prefHeight="35.0" prefWidth="101.0" promptText="Month" style="-fx-background-color: white;" />
+                  <ComboBox fx:id="year" layoutX="275.0" layoutY="365.0" prefHeight="35.0" prefWidth="101.0" promptText="Year" style="-fx-background-color: white;" />
+                  <TextField fx:id="Email" layoutX="18.0" layoutY="186.0" prefHeight="44.0" prefWidth="362.0" promptText="Email Address" style="-fx-background-color: white; -fx-background-radius: 7; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <CheckBox fx:id="male" layoutX="156.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleMaleBox" prefHeight="22.0" prefWidth="70.0" text="Male">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="female" layoutX="257.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleFemaleBox" text="Female">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="41.0" layoutY="419.0" text="Gender :">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fx:id="wrongpass" fitHeight="40.0" fitWidth="42.0" layoutX="62.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\exclamation.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="41.0" layoutY="25.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #ff6480;" styleClass="post-background" stylesheets="@home.css">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\angle-circle-left.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

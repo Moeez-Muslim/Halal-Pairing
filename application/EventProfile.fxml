@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="76.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EventProfileController">
+    <children>
+      <VBox alignment="TOP_CENTER" prefHeight="75.0" prefWidth="580.0" style="-fx-background-color: #F2F3F4;" styleClass="post-background" stylesheets="@home.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="775.0" spacing="15.0" style="-fx-background-color: #F2F3F4;">
+               <children>
+                  <VBox prefHeight="65.0" prefWidth="519.0" spacing="5.0" style="-fx-background-color: #F2F3F4;" stylesheets="@home.css">
+                     <children>
+                        <Label fx:id="EventName">
+                           <font>
+                              <Font name="Berlin Sans FB" size="23.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="2.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="Location" text="Location">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="desp" strokeType="OUTSIDE" strokeWidth="0.0" text="Desp" wrappingWidth="434.3984375">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+    </children>
+</AnchorPane>

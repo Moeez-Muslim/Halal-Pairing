@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700" prefWidth="1350" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InviteFriendController">
+    <children>
+      <Pane layoutX="278.0" layoutY="9.0" prefHeight="683.0" prefWidth="714.0">
+         <children>
+            <ImageView fx:id="ProfileImg" fitHeight="150.0" fitWidth="150.0" layoutX="449.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\man3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="154.0" prefHeight="44.0" prefWidth="284.0" text="Invite a Friend">
+               <font>
+                  <Font name="Berlin Sans FB" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="106.0" layoutY="346.0" prefHeight="43.0" prefWidth="526.0" styleClass="post-background" stylesheets="@home.css">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Label layoutX="106.0" layoutY="285.0" prefHeight="44.0" prefWidth="292.0" text="Email Address">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="239.0" layoutY="430.0" mnemonicParsing="false" onAction="#generateLink" style="-fx-background-color: #ff6480;" styleClass="post-background" stylesheets="@home.css" text="Generate Referral Link" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="referrralLink" layoutX="106.0" layoutY="541.0" prefHeight="43.0" prefWidth="526.0" styleClass="post-background" stylesheets="@home.css">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="40.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="591.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\link.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="114.0" layoutY="488.0" prefHeight="44.0" prefWidth="292.0" text="Referral Link">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="704.0" prefWidth="318.0" style="-fx-background-color: #ff6480;">
+         <children>
+            <Button alignment="CENTER_LEFT" graphicTextGap="1.0" layoutX="46.0" layoutY="177.0" mnemonicParsing="false" onAction="#home" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Home " textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" graphicTextGap="1.0" layoutX="46.0" layoutY="237.0" mnemonicParsing="false" onAction="#Messages" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Messages" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="309.0" mnemonicParsing="false" onAction="#findPartner" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Partners" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="380.0" mnemonicParsing="false" onAction="#halalEvent" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Halal Events" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="48.0" layoutY="456.0" mnemonicParsing="false" onAction="#Membership" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Membership" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="520.0" mnemonicParsing="false" onAction="#inviteFriend" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Invite a Friend" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_LEFT" layoutX="46.0" layoutY="587.0" mnemonicParsing="false" onAction="#updateProfile" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #ff6480;" text="Update Profile" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="173.0" layoutX="56.0" layoutY="21.0" pickOnBounds="true">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\2.1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="981.0" prefHeight="704.0" prefWidth="399.0" style="-fx-background-color: #ff6480;">
+         <children>
+            <Button layoutX="2.0" layoutY="594.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="51.0" prefWidth="185.0" style="-fx-background-color: #ff6480;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="152.0" layoutY="611.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:C:\Programming\JAVA\HalalPairing\src\database\images\exit.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="11.0" layoutY="530.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#editInterests" prefHeight="50.0" prefWidth="206.0" style="-fx-background-color: #ff6480;" text="Edit Interests" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Button>
+            <VBox layoutX="40.0" layoutY="110.0" prefHeight="350.0" prefWidth="325.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" prefHeight="43.0" text="Halal Events Happening!" textFill="#fffbfb">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="16.0" />
+                     </padding>
+                  </Label>
+                  <VBox prefHeight="104.0" prefWidth="298.0" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Finding Your Ideal Soul Mate">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Speaker: Abu Usamah">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="103.0" prefWidth="298.0" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Why 4 marriages should be a norm">
+                           <font>
+                              <Font name="Berlin Sans FB" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Speaker: Moeez Muslim">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="90.0" prefWidth="298.0" styleClass="top-border" stylesheets="@home.css">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Issues in Marriage and Great advices">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="66.0" text="Speaker: Ismail ibn Musa Menk">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Button layoutX="15.0" layoutY="454.0" mnemonicParsing="false" onAction="#halalEvent" prefHeight="57.0" prefWidth="213.0" style="-fx-background-color: #ff6480;" text="More Events" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+               </font>
+            </Button>
+            <Label fx:id="profileName" layoutX="40.0" layoutY="39.0" text="Name">
+               <font>
+                  <Font name="Berlin Sans FB" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
